@@ -1,0 +1,34 @@
+Partlist
+
+Exported from esp12Stack.brd at 07.12.2018 13:59
+
+EAGLE Version 7.7.0 Copyright (c) 1988-2016 CadSoft
+
+Assembly variant: 
+
+Part     Value             Package        Library       Position (inch)       Orientation
+
+C1       100u              C0805          eagle-ltspice (0.45 0.4125)         MR270
+C2       10u               C0805          eagle-ltspice (0.45 0.5875)         MR90
+FLASH    SPST.B3U-3000P(M) B3U-3000P(M)   omron         (1 0.05)              MR180
+GND      MCP1700SOT23      SOT-23         MCP1700       (0.6 0.45)            MR90
+J02      470               R0805          eagle-ltspice (1.01875 0.525)       MR180
+J04      470               R0805          eagle-ltspice (1.01875 0.61875)     MR180
+J05      470               R0805          eagle-ltspice (1.01875 0.7125)      MR180
+J12      470               R0805          eagle-ltspice (0.3 0.65)            MR270
+J13      470               R0805          eagle-ltspice (0.3 0.4125)          MR270
+JVCC     0R                R0805          eagle-ltspice (0.66875 0.51875)     MR180
+LED1     WS2812B5050       WS2812B        adafruit      (1.1 1.05)            R180
+LED2     WS2812B5050       WS2812B        adafruit      (0.15 1.05)           R180
+LED3     WS2812B5050       WS2812B        adafruit      (0.2625 0.1125)       R0
+LED4     WS2812B5050       WS2812B        adafruit      (0.975 0.1125)        R0
+MDL1                       ESP8266-ESP12E ESP12E        (0.3 0.25)            R0
+R1       10k               R0805          eagle-ltspice (0.5 0.85)            MR180
+R2       10k               R0805          eagle-ltspice (0.5 0.75)            MR180
+R3       10k               R0805          eagle-ltspice (0.66875 0.60625)     MR0
+R4       10k               R0805          eagle-ltspice (0.66875 0.69375)     MR0
+R5       10k               R0805          eagle-ltspice (0.75 0.35)           MR90
+REST     SPST.B3U-3000P(M) B3U-3000P(M)   omron         (0.25 0.05)           MR180
+SV1                        MA08-1         con-lstb      (0.0625 0.5)          R270
+SV2                        MA08-1         con-lstb      (1.175 0.5)           R270
+U$2      MICRO-USB         MICRO-USB      microusb (1)  (0.6 0)               MR0
