@@ -2146,6 +2146,7 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <part name="J02" library="eagle-ltspice" deviceset="R" device="" value="470"/>
 <part name="J13" library="eagle-ltspice" deviceset="R" device="" value="470"/>
 <part name="J12" library="eagle-ltspice" deviceset="R" device="" value="470"/>
+<part name="J_REST" library="eagle-ltspice" deviceset="R" device="" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2183,6 +2184,7 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <instance part="J02" gate="G$1" x="124.46" y="12.7" rot="R90"/>
 <instance part="J13" gate="G$1" x="45.72" y="12.7" rot="R90"/>
 <instance part="J12" gate="G$1" x="38.1" y="12.7" rot="R90"/>
+<instance part="J_REST" gate="G$1" x="43.18" y="63.5" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2275,11 +2277,16 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <pinref part="SV1" gate="1" pin="1"/>
 <wire x1="73.66" y1="43.18" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="58.42" x2="53.34" y2="43.18" width="0.1524" layer="91"/>
 <junction x="53.34" y="43.18"/>
 <wire x1="53.34" y1="43.18" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="REST" gate="G$1" pin="1"/>
+<pinref part="J_REST" gate="G$1" pin="2"/>
+<wire x1="43.18" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="68.58" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
+<junction x="48.26" y="43.18"/>
 </segment>
 </net>
 <net name="ADC" class="0">
@@ -2293,7 +2300,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <segment>
 <pinref part="MDL1" gate="G$1" pin="GPIO16"/>
 <pinref part="SV1" gate="1" pin="4"/>
-<wire x1="73.66" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="35.56" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="35.56" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="J_REST" gate="G$1" pin="1"/>
+<junction x="43.18" y="35.56"/>
 </segment>
 </net>
 <net name="GPIO14" class="0">

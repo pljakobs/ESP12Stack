@@ -829,6 +829,10 @@ design rules under a new name.</description>
 <attribute name="SPICEMODEL" value="NONE" x="15.24" y="21.2725" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="15.24" y="21.2725" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
+<element name="J_REST" library="eagle-ltspice" package="R0603" value="10k" x="4.1275" y="14.76375" rot="MR90">
+<attribute name="SPICEPREFIX" value="R" x="4.1275" y="14.76375" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="SPICEMODEL" value="NONE" x="4.1275" y="14.76375" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -968,12 +972,23 @@ design rules under a new name.</description>
 <wire x1="1.5875" y1="21.59" x2="3.33375" y2="21.59" width="0.254" layer="16"/>
 <wire x1="3.33375" y1="21.59" x2="3.65125" y2="21.2725" width="0.254" layer="16"/>
 <wire x1="3.65125" y1="21.2725" x2="3.65125" y2="20.79625" width="0.254" layer="16"/>
-<wire x1="3.65125" y1="20.79625" x2="3.65125" y2="2.21875" width="0.254" layer="16"/>
 <wire x1="3.65125" y1="2.21875" x2="4.6" y2="1.27" width="0.254" layer="16"/>
 <wire x1="7.62" y1="22.35" x2="4.09375" y2="22.35" width="0.254" layer="1"/>
 <wire x1="4.09375" y1="22.35" x2="3.33375" y2="21.59" width="0.254" layer="1"/>
 <wire x1="3.33375" y1="21.59" x2="1.5875" y2="21.59" width="0.254" layer="1"/>
+<contactref element="J_REST" pad="2"/>
 <wire x1="4.5475" y1="20.79625" x2="3.65125" y2="20.79625" width="0.254" layer="16"/>
+<wire x1="3.65125" y1="20.79625" x2="3.65125" y2="15.71625" width="0.254" layer="16"/>
+<wire x1="3.65125" y1="15.71625" x2="3.81" y2="15.5575" width="0.254" layer="16"/>
+<wire x1="3.81" y1="15.5575" x2="4.38875" y2="15.5575" width="0.254" layer="16"/>
+<wire x1="4.38875" y1="15.5575" x2="4.1275" y2="15.61375" width="0.254" layer="16"/>
+<wire x1="4.1275" y1="15.61375" x2="4.70625" y2="15.61375" width="0.254" layer="16"/>
+<wire x1="4.92125" y1="13.0175" x2="3.96875" y2="13.0175" width="0.254" layer="16"/>
+<wire x1="3.65125" y1="12.7" x2="3.65125" y2="2.21875" width="0.254" layer="16"/>
+<wire x1="3.96875" y1="13.0175" x2="3.65125" y2="12.7" width="0.254" layer="16"/>
+<wire x1="4.70625" y1="15.61375" x2="5.08" y2="15.24" width="0.254" layer="16"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="13.17625" width="0.254" layer="16"/>
+<wire x1="5.08" y1="13.17625" x2="4.92125" y2="13.0175" width="0.254" layer="16"/>
 </signal>
 <signal name="ADC">
 <contactref element="MDL1" pad="2"/>
@@ -994,6 +1009,9 @@ design rules under a new name.</description>
 <wire x1="3.4925" y1="14.9225" x2="2.7432" y2="14.1732" width="0.254" layer="1"/>
 <wire x1="3.4925" y1="14.9225" x2="5.23875" y2="14.9225" width="0.254" layer="1"/>
 <wire x1="5.23875" y1="14.9225" x2="6.66625" y2="16.35" width="0.254" layer="1"/>
+<contactref element="J_REST" pad="1"/>
+<wire x1="1.5875" y1="13.97" x2="4.38875" y2="13.97" width="0.254" layer="16"/>
+<wire x1="4.38875" y1="13.97" x2="4.1275" y2="13.91375" width="0.254" layer="16"/>
 </signal>
 <signal name="GPIO14">
 <contactref element="MDL1" pad="5"/>
@@ -1163,11 +1181,6 @@ design rules under a new name.</description>
 <wire x1="2.06375" y1="23.65375" x2="2.69875" y2="23.65375" width="0.254" layer="16"/>
 <wire x1="2.69875" y1="23.65375" x2="3.33375" y2="23.01875" width="0.254" layer="16"/>
 <via x="6.0325" y="1.42875" extent="1-16" drill="0.6"/>
-<wire x1="5.3975" y1="20.0025" x2="5.08" y2="19.685" width="0.254" layer="16"/>
-<wire x1="5.08" y1="19.685" x2="4.445" y2="19.685" width="0.254" layer="16"/>
-<wire x1="4.445" y1="19.685" x2="4.1275" y2="19.3675" width="0.254" layer="16"/>
-<wire x1="4.1275" y1="19.3675" x2="4.1275" y2="3.33375" width="0.254" layer="16"/>
-<wire x1="4.1275" y1="3.33375" x2="4.445" y2="3.01625" width="0.254" layer="16"/>
 <wire x1="4.445" y1="3.01625" x2="5.715" y2="3.01625" width="0.254" layer="16"/>
 <wire x1="5.715" y1="3.01625" x2="6.0325" y2="2.69875" width="0.254" layer="16"/>
 <wire x1="6.0325" y1="2.69875" x2="6.0325" y2="1.42875" width="0.254" layer="16"/>
@@ -1175,9 +1188,22 @@ design rules under a new name.</description>
 <wire x1="3.33375" y1="22.38375" x2="3.96875" y2="21.74875" width="0.254" layer="16"/>
 <wire x1="3.96875" y1="21.74875" x2="5.08" y2="21.74875" width="0.254" layer="16"/>
 <wire x1="5.08" y1="21.74875" x2="5.3975" y2="21.43125" width="0.254" layer="16"/>
-<wire x1="5.3975" y1="21.43125" x2="5.3975" y2="20.0025" width="0.254" layer="16"/>
 <wire x1="4.2175" y1="1.2075" x2="5.81125" y2="1.2075" width="0.254" layer="1"/>
 <wire x1="5.81125" y1="1.2075" x2="6.0325" y2="1.42875" width="0.254" layer="1"/>
+<wire x1="5.3975" y1="21.43125" x2="5.3975" y2="20.0025" width="0.254" layer="16"/>
+<wire x1="5.3975" y1="20.0025" x2="5.08" y2="19.685" width="0.254" layer="16"/>
+<wire x1="5.08" y1="19.685" x2="4.445" y2="19.685" width="0.254" layer="16"/>
+<wire x1="4.445" y1="19.685" x2="4.1275" y2="19.3675" width="0.254" layer="16"/>
+<wire x1="4.1275" y1="19.3675" x2="4.1275" y2="16.1925" width="0.254" layer="16"/>
+<wire x1="4.1275" y1="16.1925" x2="4.28625" y2="16.03375" width="0.254" layer="16"/>
+<wire x1="4.28625" y1="16.03375" x2="4.92125" y2="16.03375" width="0.254" layer="16"/>
+<wire x1="4.92125" y1="12.54125" x2="4.445" y2="12.54125" width="0.254" layer="16"/>
+<wire x1="4.445" y1="12.54125" x2="4.1275" y2="12.22375" width="0.254" layer="16"/>
+<wire x1="4.1275" y1="12.22375" x2="4.1275" y2="3.33375" width="0.254" layer="16"/>
+<wire x1="4.1275" y1="3.33375" x2="4.445" y2="3.01625" width="0.254" layer="16"/>
+<wire x1="4.92125" y1="16.03375" x2="5.55625" y2="15.39875" width="0.254" layer="16"/>
+<wire x1="5.55625" y1="15.39875" x2="5.55625" y2="13.0175" width="0.254" layer="16"/>
+<wire x1="5.55625" y1="13.0175" x2="4.92125" y2="12.54125" width="0.254" layer="16"/>
 </signal>
 <signal name="DOUT3DIN4">
 <contactref element="LED3" pad="2-DOUT"/>
