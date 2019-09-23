@@ -4356,12 +4356,12 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="J1" gate="G$1" x="55.88" y="-53.34" rot="R270"/>
 <instance part="J2" gate="G$1" x="63.5" y="-53.34" rot="R270"/>
 <instance part="J3" gate="G$1" x="71.12" y="-53.34" rot="R270"/>
-<instance part="R6" gate="G$1" x="68.58" y="50.8" rot="R270"/>
+<instance part="R6" gate="G$1" x="68.58" y="68.58" rot="R270"/>
 <instance part="GND3" gate="1" x="147.32" y="15.24"/>
 <instance part="P+2" gate="VCC" x="33.02" y="17.78"/>
 <instance part="GND4" gate="1" x="68.58" y="35.56"/>
 <instance part="P+4" gate="VCC" x="68.58" y="78.74"/>
-<instance part="CLR" gate="G$1" x="68.58" y="68.58" rot="R270"/>
+<instance part="CLR" gate="G$1" x="68.58" y="50.8" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -4427,9 +4427,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <junction x="38.1" y="-17.78"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="CLR" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="68.58" y1="45.72" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="48.26" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4443,9 +4443,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="33.02" y1="12.7" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="CLR" gate="G$1" pin="1"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="68.58" y1="71.12" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="76.2" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -4553,13 +4553,13 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <segment>
 <pinref part="SV1" gate="1" pin="4"/>
 <label x="38.1" y="35.56" size="1.778" layer="95"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="55.88" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="60.96" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="35.56" x2="30.48" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="CLR" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="66.04" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="63.5" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="CLR" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="60.96" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
 <junction x="68.58" y="60.96"/>
 </segment>
 </net>
