@@ -7328,7 +7328,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="D1" library="adafruit" deviceset="DIODE" device="SOD-323F"/>
 <part name="J02" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
-<part name="J1" library="eagle-ltspice" deviceset="R" device="R0603" value="470"/>
+<part name="R8" library="eagle-ltspice" deviceset="R" device="R0603" value="470"/>
 <part name="J04" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
 <part name="J05" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
 <part name="J12" library="SparkFun" deviceset="SOLDERJUMPER" device="NC2"/>
@@ -7381,7 +7381,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <instance part="P+2" gate="VCC" x="73.66" y="132.08"/>
 <instance part="D1" gate="G$1" x="-93.98" y="129.54"/>
 <instance part="J02" gate="1" x="-106.68" y="-30.48"/>
-<instance part="J1" gate="G$1" x="-81.28" y="-53.34" rot="R180"/>
+<instance part="R8" gate="G$1" x="-81.28" y="-53.34" rot="R180"/>
 <instance part="J04" gate="1" x="-106.68" y="-38.1"/>
 <instance part="J05" gate="1" x="-106.68" y="-45.72"/>
 <instance part="J12" gate="1" x="-106.68" y="-53.34"/>
@@ -7825,7 +7825,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <pinref part="J05" gate="1" pin="2"/>
 <pinref part="J12" gate="1" pin="2"/>
 <pinref part="J13" gate="1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="-93.98" y1="-53.34" x2="-86.36" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -7878,7 +7878,7 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="DI"/>
 <wire x1="-76.2" y1="-53.34" x2="-73.66" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
